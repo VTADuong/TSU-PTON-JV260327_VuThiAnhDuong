@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <form onsubmit="save(event)">
+        <h2>Hệ thống quản lý công việc</h2>
+        <div>
+            <span>Mã công việc</span>
+            <input type="text" name="id" id="">
+        </div>
+        <div>
+            <span>Tên công việc</span>
+            <input type="text" name="taskName" id="">
+        </div>
+        <div>
+            <span>Người thực hiện</span>
+            <input type="text" name="per" id="">
+        </div>
+        <div>
+            <span>Deadline</span>
+            <input type="date" name="deadline" id="">
+        </div>
+        <div>
+            <span>Trạng thái: </span>
+            Chờ làm <input type="radio" name="status" value="Chờ làm">
+            Đang làm <input type="radio" name="status" value="Đang làm">
+            Hoàn thành <input type="radio" name="status" value="Hoàn thành">
+        </div>
+        <button>Lưu</button>
+    </form>
+
+    <input id="se_ip" type="text"> <button onclick="search()">Search by name/job</button>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Mã công việc</th>
+                <th>Tên công việc</th>
+                <th>Người thực hiện</th>
+                <th>Deadline</th>
+                <th>Trạng thái</th>
+                <th>Hành động</th>
+                <th>
+                    <button onclick="sapXep()">Sắp xếp Anpha B</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
